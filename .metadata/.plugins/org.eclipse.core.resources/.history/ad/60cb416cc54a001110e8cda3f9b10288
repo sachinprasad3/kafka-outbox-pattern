@@ -1,0 +1,23 @@
+package com.notification;
+
+import org.springframework.kafka.annotation.KafkaListener;
+import org.springframework.stereotype.Service;
+
+@Service
+public class KafkaConsumer {
+
+	@KafkaListener(topics = "order-topic", groupId = "my-group")
+	public void consume(String message) {
+        System.out.println("Message Received : " + message);
+    }
+	
+	@KafkaListener(topics = "new-order", groupId = "my-group")
+	public void consume2(String msg) {
+		System.out.println("message from order : "+msg);
+	}
+	
+	@KafkaListener(topics = "order-event", groupId = "my-group")
+	public void consumeEvent(OrderEvent event) {
+		System.out.println("event Received : "+ event);
+	}
+}

@@ -18,6 +18,18 @@ public class KafkaConsumer {
 	
 	@KafkaListener(topics = "order-event", groupId = "my-group")
 	public void consumeEvent(OrderEvent event) {
-		System.out.println("event Received : "+ event);
+		System.out.println("================================");
+
+        System.out.println("Notification Received");
+
+        System.out.println("Order ID : " + event.getOrderId());
+
+        System.out.println("Product : " + event.getProductName());
+
+        System.out.println("Amount : " + event.getAmount());
+
+        System.out.println("================================");
+		
+		
 	}
 }
