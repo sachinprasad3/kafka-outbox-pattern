@@ -6,10 +6,18 @@
     <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
     <fullyQualifiedTypeName name="org.springframework.http.HttpStatusCode"/>
     <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
-    <fullyQualifiedTypeName name="org.springframework.kafka.core.KafkaTemplate"/>
     <fullyQualifiedTypeName name="com.order.KafkaProducer"/>
     <fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.AutoConfigureOrder"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+    <fullyQualifiedTypeName name="org.apache.kafka.clients.admin.NewTopic"/>
+    <fullyQualifiedTypeName name="org.springframework.kafka.config.TopicBuilder"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+    <fullyQualifiedTypeName name="org.springframework.kafka.core.KafkaTemplate"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
+    <fullyQualifiedTypeName name="com.order.OrderEvent"/>
     <fullyQualifiedTypeName name="org.springframework.kafka.annotation.KafkaListener"/>
+    <fullyQualifiedTypeName name="com.notification.OrderEvent"/>
 </qualifiedTypeNameHistroy>
