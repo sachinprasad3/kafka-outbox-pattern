@@ -17,6 +17,9 @@ public class OrderController {
 	@Autowired
 	private KafkaProducer kafkaProducer;
 	
+	@Autowired
+	private OrderService orderService;
+	
 	@GetMapping("/order")
 	public ResponseEntity<String> createOrder(){
 		
@@ -40,4 +43,11 @@ public class OrderController {
 		
 		return ResponseEntity.status(HttpStatus.CREATED).body("order created with event");
 	}
+	
+	 @PostMapping("/create-order")
+	    public String createOrder4() {
+	        Orders order = orderService.saveOrder();
+	        return "Order Saved : " + order.getId();
+	    }
+	
 }

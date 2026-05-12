@@ -35,7 +35,7 @@ public class KafkaConsumer {
         System.out.println("Amount : " + event.getAmount());
         System.out.println("================================");
         
-        throw new RuntimeException("Failure");
+        //throw new RuntimeException("Failure");
 		
 		
 	}

@@ -1419,3 +1419,174 @@ java.util.concurrent.TimeoutException
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2026-05-12 12:23:11.397
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2026-05-12 12:23:11.417
+!MESSAGE classpath=154 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2026-05-12 12:23:11.436
+!MESSAGE buffering callback sts4.classpath.NslYCLxn order-service false 154
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2026-05-12 12:23:11.439
+!MESSAGE executing callback sts4.classpath.NslYCLxn 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2026-05-12 12:23:11.600
+!MESSAGE executing callback sts4.classpath.NslYCLxn SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2026-05-12 12:23:31.647
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2026-05-12 12:23:31.659
+!MESSAGE classpath=154 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2026-05-12 12:23:31.670
+!MESSAGE buffering callback sts4.classpath.NslYCLxn order-service false 154
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2026-05-12 12:23:31.671
+!MESSAGE executing callback sts4.classpath.NslYCLxn 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2026-05-12 12:23:31.698
+!MESSAGE executing callback sts4.classpath.NslYCLxn SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2026-05-12 12:25:13.262
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2026-05-12 12:25:13.266
+!MESSAGE classpath=156 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2026-05-12 12:25:13.268
+!MESSAGE buffering callback sts4.classpath.NslYCLxn order-service false 156
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2026-05-12 12:25:13.269
+!MESSAGE executing callback sts4.classpath.NslYCLxn 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2026-05-12 12:25:13.297
+!MESSAGE executing callback sts4.classpath.NslYCLxn SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-05-12 12:29:30.083
+!MESSAGE The POM for org.projectlombok:lombok:jar: is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2026-05-12 12:29:30.102
+!MESSAGE Unable to collect dependencies for plugin
+!STACK 0
+org.eclipse.aether.resolution.DependencyResolutionException: org.projectlombok:lombok:jar: was not found in https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveDependencies(DefaultRepositorySystem.java:357)
+	at org.jboss.tools.maven.apt.internal.utils.PluginDependencyResolver.getResolvedPluginDependencies(PluginDependencyResolver.java:104)
+	at org.jboss.tools.maven.apt.internal.compiler.MavenCompilerJdtAptDelegate.getAnnotationProcessorConfiguration(MavenCompilerJdtAptDelegate.java:168)
+	at org.jboss.tools.maven.apt.internal.AbstractAptConfiguratorDelegate.configureClasspath(AbstractAptConfiguratorDelegate.java:251)
+	at org.jboss.tools.maven.apt.internal.AbstractAptProjectConfigurator.configureRawClasspath(AbstractAptProjectConfigurator.java:165)
+	at org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator.invokeJavaProjectConfigurators(AbstractJavaProjectConfigurator.java:213)
+	at org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator.configure(AbstractJavaProjectConfigurator.java:172)
+	at org.eclipse.m2e.core.project.configurator.AbstractLifecycleMapping.configure(AbstractLifecycleMapping.java:124)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$2(ProjectConfigurationManager.java:515)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:509)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:447)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$1(ProjectConfigurationManager.java:362)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1411)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:361)
+	at org.eclipse.m2e.core.ui.internal.UpdateMavenProjectJob.runInWorkspace(UpdateMavenProjectJob.java:80)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.aether.resolution.ArtifactResolutionException: org.projectlombok:lombok:jar: was not found in https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:424)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:229)
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveDependencies(DefaultRepositorySystem.java:340)
+	... 21 more
+Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: org.projectlombok:lombok:jar: was not found in https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced
+	at org.eclipse.aether.internal.impl.DefaultUpdateCheckManager.newException(DefaultUpdateCheckManager.java:217)
+	at org.eclipse.aether.internal.impl.DefaultUpdateCheckManager.checkArtifact(DefaultUpdateCheckManager.java:189)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.gatherDownloads(DefaultArtifactResolver.java:573)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:483)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:401)
+	... 23 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2026-05-12 12:29:30.351
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.jboss.tools.maven.apt 4 -1 2026-05-12 12:29:30.353
+!MESSAGE Unable to collect dependencies for plugin
+!STACK 0
+org.eclipse.aether.resolution.DependencyResolutionException: org.projectlombok:lombok:jar: was not found in https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveDependencies(DefaultRepositorySystem.java:357)
+	at org.jboss.tools.maven.apt.internal.utils.PluginDependencyResolver.getResolvedPluginDependencies(PluginDependencyResolver.java:104)
+	at org.jboss.tools.maven.apt.internal.compiler.MavenCompilerJdtAptDelegate.getAnnotationProcessorConfiguration(MavenCompilerJdtAptDelegate.java:168)
+	at org.jboss.tools.maven.apt.internal.AbstractAptConfiguratorDelegate.configureClasspath(AbstractAptConfiguratorDelegate.java:251)
+	at org.jboss.tools.maven.apt.internal.AbstractAptProjectConfigurator.configureRawClasspath(AbstractAptProjectConfigurator.java:165)
+	at org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator.invokeJavaProjectConfigurators(AbstractJavaProjectConfigurator.java:213)
+	at org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator.configure(AbstractJavaProjectConfigurator.java:172)
+	at org.eclipse.m2e.core.project.configurator.AbstractLifecycleMapping.configure(AbstractLifecycleMapping.java:124)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$2(ProjectConfigurationManager.java:515)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:509)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:447)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$1(ProjectConfigurationManager.java:362)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1411)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:361)
+	at org.eclipse.m2e.core.ui.internal.UpdateMavenProjectJob.runInWorkspace(UpdateMavenProjectJob.java:80)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.aether.resolution.ArtifactResolutionException: org.projectlombok:lombok:jar: was not found in https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:424)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:229)
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveDependencies(DefaultRepositorySystem.java:340)
+	... 21 more
+Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: org.projectlombok:lombok:jar: was not found in https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced
+	at org.eclipse.aether.internal.impl.DefaultUpdateCheckManager.newException(DefaultUpdateCheckManager.java:217)
+	at org.eclipse.aether.internal.impl.DefaultUpdateCheckManager.checkArtifact(DefaultUpdateCheckManager.java:189)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.gatherDownloads(DefaultArtifactResolver.java:573)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:483)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:401)
+	... 23 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2026-05-12 12:29:30.354
+!MESSAGE classpath=155 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2026-05-12 12:29:30.360
+!MESSAGE buffering callback sts4.classpath.NslYCLxn order-service false 155
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2026-05-12 12:29:30.360
+!MESSAGE executing callback sts4.classpath.NslYCLxn 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2026-05-12 12:29:30.385
+!MESSAGE executing callback sts4.classpath.NslYCLxn SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2026-05-12 12:29:33.750
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2026-05-12 12:29:33.753
+!MESSAGE classpath=155 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2026-05-12 12:29:33.756
+!MESSAGE buffering callback sts4.classpath.NslYCLxn order-service false 155
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2026-05-12 12:29:33.756
+!MESSAGE executing callback sts4.classpath.NslYCLxn 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2026-05-12 12:29:33.783
+!MESSAGE executing callback sts4.classpath.NslYCLxn SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2026-05-12 12:30:42.220
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2026-05-12 12:30:42.228
+!MESSAGE classpath=157 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2026-05-12 12:30:42.234
+!MESSAGE buffering callback sts4.classpath.NslYCLxn order-service false 157
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2026-05-12 12:30:42.235
+!MESSAGE executing callback sts4.classpath.NslYCLxn 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2026-05-12 12:30:42.263
+!MESSAGE executing callback sts4.classpath.NslYCLxn SUCCESS [done]
