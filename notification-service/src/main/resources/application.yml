@@ -8,23 +8,20 @@ spring:
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
 
     consumer:
-      group-id: my-group
+      group-id: my-group-v2
+
       auto-offset-reset: earliest
 
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
 
-      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.ErrorHandlingDeserializer
 
       properties:
-        spring:
-          json:
-            trusted:
-              packages: "*"
 
-            value:
-              default:
-                type: "com.notification.OrderEvent"
+        spring.deserializer.value.delegate.class: org.springframework.kafka.support.serializer.JsonDeserializer
 
-            use:
-              type:
-                headers: false
+        spring.json.trusted.packages: "*"
+
+        spring.json.value.default.type: com.notification.OrderEvent
+
+        spring.json.use.type.headers: false

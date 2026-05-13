@@ -2,7 +2,6 @@ INDEX VERSION 1.131+D:\sachin-kafka-worksapce\.metadata\.plugins\org.eclipse.jdt
 1865797976.index
 1211811692.index
 4213657069.index
-715374721.index
 1118982603.index
 1143102341.index
 2026187526.index

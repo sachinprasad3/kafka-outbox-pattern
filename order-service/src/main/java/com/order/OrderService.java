@@ -19,11 +19,13 @@ public class OrderService {
 	private final ObjectMapper objectMapper;
 	 
 	@Transactional
-	public Orders saveOrder() throws JsonProcessingException {	
+	public Orders saveOrder() throws JsonProcessingException {
+		
 		Orders order = Orders.builder()
-				.productName("apple")
+				.productName("Mango")
 				.amount(20.0)
 				.build();
+		
 		Orders ord = orderRepo.save(order);
 		
 		//create order event
@@ -35,15 +37,15 @@ public class OrderService {
 		//convert Eventr to Json
 		String payload = objectMapper.writeValueAsString(orderEvent);
 		
-		 // SAVE OUTBOX EVENT
+		// SAVE OUTBOX EVENT
 		OutboxEvent outbox = new OutboxEvent();
-        outbox.setTopic("order-event");
+        outbox.setTopic("order-event-2");
         outbox.setPayload(payload);
         outbox.setProcessed(false);
         outboxRepo.save(outbox);
         
 		return ord;
-
+		
 	}
 	
 }

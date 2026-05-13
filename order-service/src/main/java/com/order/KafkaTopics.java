@@ -18,4 +18,9 @@ public class KafkaTopics {
 		return TopicBuilder.name("order-event").partitions(3).replicas(1).build();
 	}
 	
+	@Bean
+	public NewTopic orderTopic3() {
+		return TopicBuilder.name("order-event-3").partitions(3).replicas(1).build();
+	}
+	
 }
