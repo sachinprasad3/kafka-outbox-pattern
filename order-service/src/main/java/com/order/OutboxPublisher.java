@@ -37,7 +37,32 @@ public class OutboxPublisher {
 				e.printStackTrace();
 			}
 			
-			kafkaTemplate.send("order-event-3", orderEvent);
+			//kafkaTemplate.send("order-event-3", orderEvent);
+			
+			//idempotent
+			
+//			kafkaTemplate.send( "order-event-3", orderEvent ).whenComplete((result, ex) -> {
+//
+//			    if (ex == null) { System.out.println("Message Sent Successfully");
+//
+//			    } else {
+//
+//			        System.out.println("Message Failed");
+//			    }
+//			});
+			
+			
+			//kafka transaction
+			
+			kafkaTemplate.executeInTransaction(operations -> {operations.send("order-event-3",orderEvent);
+
+                        event.setProcessed(true);
+
+                        outboxRepo.save(event);
+
+                        return true;
+                    }
+            );
 			
 			event.setProcessed(true);
 			outboxRepo.save(event);

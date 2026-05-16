@@ -25,3 +25,5 @@ spring:
         spring.json.value.default.type: com.notification.OrderEvent
 
         spring.json.use.type.headers: false
+        
+        isolation.level: read_committed
